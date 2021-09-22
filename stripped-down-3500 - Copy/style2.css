@@ -1,13 +1,26 @@
-body {
+.haelth {
   display: flex;
-  justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
+  margin: 0vh;
   font-family: "Open Sans", sans-serif;
   background: #222;
   background-image: url("https://source.unsplash.com/1600x900/?landscape");
   font-size: 120%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.medical-record {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  margin-top: 5vh;
+  font-family: "Open Sans", sans-serif;
+  background: #222;
+  background-image: url("https://source.unsplash.com/1600x900/?landscape");
+  font-size: 120%;
+  flex-direction: column;
 }
 
 .card {
@@ -68,4 +81,87 @@ h1.temp {
 .description {
   text-transform: capitalize;
   margin-left: 8px;
+}
+
+.medical-card {
+  background: #333333ee;
+  color: white;
+  padding: 1em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 600px;
+  margin: 1em;
+}
+
+.text-card {
+  background: #616060d0;
+  color: white;
+  padding: 1em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 560px;
+  text-align: center;
+}
+
+.medical-button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 44px;
+  width: 44px;
+  outline: none;
+  background: #333333;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+input.search-color{
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 24px;
+  background: #333333;
+  color: white;
+  font-family: inherit;
+  font-size: 105%;
+  width: calc(100% - 100px);
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flex-column{  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.flex-column-start{  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.small-font{
+  font-size: 2.5vh;
+}
+
+.small-font-grey{
+  font-size: 2.5vh;
+  color: rgb(202, 201, 201);
+}
+
+.header-font{
+  font-size: 3.25vh;
+  font-weight: bold;
+}
+
+.main-header-font{
+  text-align: center;
+  font-size: 4vh;
+  font-weight: bold;
 }
