@@ -165,3 +165,24 @@ input.search-color{
   font-size: 4vh;
   font-weight: bold;
 }
+.flex-row img {
+	border-radius: 100%;
+	max-width: 100%;
+  width: 14%;
+  height: 14%;
+  margin-block-start: 2em;
+  margin-block-end: 1em;
+}
+
+.smaller-font{
+  font-size: 2.0vh;
+}
+.badge {
+  
+  top: -10px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 100%;
+  background-color: red;
+  color: white;
+}
