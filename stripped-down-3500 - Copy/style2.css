@@ -23,6 +23,18 @@
   flex-direction: column;
 }
 
+.map {
+  display: flex;
+  align-items: center;
+  height: 90vh;
+  margin-top: 8vh;
+  font-family: "Open Sans", sans-serif;
+  background: #222;
+  background-image: url("https://source.unsplash.com/1600x900/?landscape");
+  font-size: 120%;
+  flex-direction: column;
+}
+
 .card {
   background: #000000d0;
   color: white;

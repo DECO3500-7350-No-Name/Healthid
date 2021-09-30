@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style2.css">
+        <script src="./js/script.js" defer></script>
+        <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
+        <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css" rel="stylesheet"/>
+        <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js"></script>
+        <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css" type="text/css"/>   
+    </head>
+
+      <body class="map">
+        <div id='map' style='width: 80vw; height: 80vh;'></div>
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoiamxlYW4xNDExIiwiYSI6ImNrdTZyeDVqazNidGwydXFoc3V1ZzNhZzAifQ.DZqlywSqwUd799etnleUkw';
+            const map = new mapboxgl.Map({
+            container: 'map', 
+            style: 'mapbox://styles/mapbox/streets-v11', 
+            center: [153.02354453420855, -27.46908669786835],
+            zoom: 12
+            });
+            const marker = new mapboxgl.Marker().setLngLat([153.02354453420855, -27.46908669786835]).addTo(map);
+            
+            const geocoder = new MapboxGeocoder({
+            accessToken: mapboxgl.accessToken,
+            mapboxgl: mapboxgl,
+            marker: false,
+            placeholder: 'Search for nearest hospitals',
+            bbox: [152.02354453420855, -28.46908669786835, 154.02354453420855, -26.46908669786835],
+            proximity: {
+            longitude: 153.02354453420855,
+            latitude: -27.46908669786835
+            }
+            });
+
+            map.addControl(geocoder);
+            map.on('load', () => {
+            map.addSource('single-point', {
+            'type': 'geojson',
+            'data': {
+            'type': 'FeatureCollection',
+            'features': []
+            }
+            });
+            
+            map.addLayer({
+            'id': 'point',
+            'source': 'single-point',
+            'type': 'circle',
+            'paint': {
+            'circle-radius': 10,
+            'circle-color': '#448ee4'
+            }
+            });
+
+            geocoder.on('result', ({ result }) => {
+            map.getSource('single-point').setData(result.geometry);
+            });
+            });
+        </script>
+
+<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.5285458373464!2d153.13915331560528!3d-27.670054531879128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b9141a83aee8129%3A0x2af1cdef3d3fdb22!2sLogan%20Hospital!5e0!3m2!1sen!2sau!4v1632995026444!5m2!1sen!2sau" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+    </body>
+</html>
