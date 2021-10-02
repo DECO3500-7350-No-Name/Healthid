@@ -15,7 +15,16 @@
         <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css" type="text/css"/>   
     </head>
 
-      <body class="map">
+    <body class="map">
+        <div class="flex-nav">
+            <a href="index.html">
+                <p class="main-header-font">
+                    Home
+                </p>
+            </a>
+            <p class="main-header-font">Search for nearby hospitals</p>
+        </div>
+        
         <div id='map' style='width: 80vw; height: 80vh; border-radius: 25px;'></div>
         <script>
             mapboxgl.accessToken = 'pk.eyJ1IjoiamxlYW4xNDExIiwiYSI6ImNrdTZyeDVqazNidGwydXFoc3V1ZzNhZzAifQ.DZqlywSqwUd799etnleUkw';

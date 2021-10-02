@@ -11,6 +11,15 @@
 </head>
 
 <body class="medical-record">
+    <div class="flex-nav">
+        <a href="index.html">
+            <p class="main-header-font">
+                Home
+            </p>
+        </a>
+        <p class="main-header-font">Medical Records</p>
+    </div>
+    
     <div class="search">
         <input type="text" class="search-color" onkeyup="searchFunction()" placeholder="Search">
         <button class="medical-button"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1.5em"
@@ -40,6 +49,8 @@
             </div>
         </div>
       
+        <hr>
+
         <div class="flex-column-start">
             <h3 class="header-font">Described symptoms</h3>
             <div class="text-card">
@@ -53,43 +64,15 @@
                 <p>Treatment options Treatment options Treatment options Treatment options Treatment options Treatment options Treatment options</p>
             </div>
         </div>
+
+        <div class="flex-column-start">
+            <h3 class="header-font">Medications</h3>
+            <div class="text-card">
+                <p>Medications Medications Medications Medications Medications Medications Medications Medications Medications Medications Medications</p>
+            </div>
+        </div>
     </content>
     </div>
-
-    <div class="medical-card">    
-        <content id="content">
-            <p class="main-header-font">Data</p>
-            <div class="flex-row">
-                <h3 class="header-font">Appointment time</h3>
-                <div class="flex-column">
-                    <p class="small-font">Today, Sept 11, 2021</p>
-                    <p class="small-font">04:15 PM - 05:00 PM</p>
-                </div>
-            </div>
-          
-            <div class="flex-row">
-                <h3 class="header-font">Attending doctor</h3>
-                <div class="flex-column">
-                    <p class="small-font">Dr. One</p>
-                    <p class="small-font-grey">Woollongabba Medial Centre</p>
-                </div>
-            </div>
-          
-            <div class="flex-column-start">
-                <h3 class="header-font">Described symptoms</h3>
-                <div class="text-card">
-                    <p>Described symptoms Described symptoms Described symptoms Described symptoms Described symptoms</p>
-                </div>
-            </div>
-    
-            <div class="flex-column-start">
-                <h3 class="header-font">Treatment options</h3>
-                <div class="text-card">
-                    <p>Treatment options Treatment options Treatment options Treatment options Treatment options Treatment options Treatment options</p>
-                </div>
-            </div>
-        </content>
-        </div>
 </body>
 
 </html>
