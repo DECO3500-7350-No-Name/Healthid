@@ -1,28 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Weather App</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./style2.css">
-        <script src="./js/script.js" defer></script>
-        <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
-        <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css" rel="stylesheet"/>
-        <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js"></script>
-        <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css" type="text/css"/>   
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon2.ico" type="image/x-icon">
+    <!-- Box icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
 
-    <body class="map">
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Medical Records</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style2.css">
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
+    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css" rel="stylesheet"/>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css" type="text/css"/>   
+</head>
+
+<body class="map">
+    <!-- Header -->
+    <header id="home" class="header">
+      <!-- Navigation -->
+      <nav class="nav">
+        <div class="navigation container">
+          <a href="index.html" class="logo">
+            <h1>HealthID</h1>
+          </a>
+  
+          <div class="menu">
+            <div class="top-nav">
+              <div class="logo">
+                <h1>HealthID</h1>
+              </div>
+              <div class="close">
+                <i class="bx bx-x"></i>
+              </div>
+            </div>
+  
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="health-data.html" class="nav-link">Health Data</a>
+              </li>
+              <li class="nav-item">
+                <a href="medical-record.html" class="nav-link">Medical Records</a>
+              </li>
+              <li class="nav-item">
+                <a href="online-consultation.html" class="nav-link">Online Consultation</a>
+              </li>
+            </ul>
+          </div>
+  
+          <a href="cart.html" class="cart-icon">
+            <i class="bx bx-shopping-bag"></i>
+          </a>
+  
+          <div class="hamburger">
+            <i class="bx bx-menu"></i>
+          </div>
+        </div>
+      </nav>
+
+    <main>
         <div class="flex-nav">
-            <a href="index.html">
-                <p class="main-header-font">
-                    Home
-                </p>
-            </a>
-            <p class="main-header-font">Search for nearby hospitals</p>
+            <p class="main-header-font">Locate doctors and hospitals</p>
         </div>
         
         <div id='map' style='width: 80vw; height: 80vh; border-radius: 25px;'></div>
@@ -73,7 +120,14 @@
             });
             });
         </script>
+    </main>
 
-<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.5285458373464!2d153.13915331560528!3d-27.670054531879128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b9141a83aee8129%3A0x2af1cdef3d3fdb22!2sLogan%20Hospital!5e0!3m2!1sen!2sau!4v1632995026444!5m2!1sen!2sau" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
-    </body>
+    
+
+     <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <!-- Custom Script -->
+  <script src="./js/index.js"></script>
+</body>
+
 </html>

@@ -1,12 +1,12 @@
 // function searchFunction() {
-//     var input, filter, div, a, i, txtValue;
+//     var input, filter, div, p, i, txtValue;
 //     input = document.getElementById("myInput");
 //     filter = input.value.toUpperCase();
 //     content = document.getElementById("content");
 //     div = content.getElementsByTagName("div");
 //     for (i = 0; i < div.length; i++) {
-//         a = div[i].getElementsByTagName("a")[0];
-//         txtValue = a.textContent || a.innerText;
+//         a = div[i].getElementsByTagName("p")[0];
+//         txtValue = p.textContent || p.innerText;
 //         if (txtValue.toUpperCase().indexOf(filter) > -1) {
 //             div[i].style.display = "";
 //         } else {

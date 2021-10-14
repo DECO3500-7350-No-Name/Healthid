@@ -2,21 +2,70 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Medical Records</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style2.css">
-  <script src="./js/script.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon2.ico" type="image/x-icon">
+    <!-- Box icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Medical Records</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style2.css">
 </head>
 
-<body class="medical-record">
+
+<body>
+    <!-- Header -->
+    <header id="home" class="header">
+      <!-- Navigation -->
+      <nav class="nav">
+        <div class="navigation container">
+          <a href="index.html" class="logo">
+            <h1>HealthID</h1>
+          </a>
+  
+          <div class="menu">
+            <div class="top-nav">
+              <div class="logo">
+                <h1>HealthID</h1>
+              </div>
+              <div class="close">
+                <i class="bx bx-x"></i>
+              </div>
+            </div>
+  
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="health-data.html" class="nav-link">Health Data</a>
+              </li>
+              <li class="nav-item">
+                <a href="map.html" class="nav-link">Map</a>
+              </li>
+              <li class="nav-item">
+                <a href="online-consultation.html" class="nav-link">Online Consultation</a>
+              </li>
+            </ul>
+          </div>
+  
+          <a href="cart.html" class="cart-icon">
+            <i class="bx bx-shopping-bag"></i>
+          </a>
+  
+          <div class="hamburger">
+            <i class="bx bx-menu"></i>
+          </div>
+        </div>
+      </nav>
+
+    <main>
     <div class="flex-nav">
-        <a href="index.html">
-            <p class="main-header-font">
-                Home
-            </p>
-        </a>
         <p class="main-header-font">Medical Records</p>
     </div>
     
@@ -32,7 +81,7 @@
 
   <div class="medical-card">    
     <content id="content">
-        <p class="main-header-font">Health Data</p>
+        <p class="main-header-font">Covid19</p>
         <div class="flex-row">
             <h3 class="header-font">Appointment time</h3>
             <div class="flex-column">
@@ -77,6 +126,12 @@
         </div>
     </content>
     </div>
+    </main>
+
+     <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <!-- Custom Script -->
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
