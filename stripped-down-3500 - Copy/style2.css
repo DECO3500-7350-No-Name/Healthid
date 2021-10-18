@@ -206,6 +206,7 @@ input.search-color{
 }
 
 .header-font{
+  padding-top: 1em;
   font-size: 3.25vw;
   font-weight: bold;
 }
@@ -220,7 +221,7 @@ input.search-color{
 	max-width: 100%;
   width: 14%;
   height: 14%;
-  margin-block-start: 2em;
+  margin-block-start: 0em;
   margin-block-end: 1em;
 }
 
