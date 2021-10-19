@@ -110,6 +110,16 @@ h1.temp {
   margin: 1em;
 }
 
+.health-card {
+  background: #333333ee;
+  color: white;
+  padding: 3em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 90vw;
+  margin: 1em;
+}
+
 .text-card {
   background: #616060d0;
   color: white;
