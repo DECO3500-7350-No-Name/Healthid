@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Medical Records</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style2.css">
+  <script src="./js/script.js" defer></script>
+  <!-- ChatBot -->
+<link rel="stylesheet" type="text/css" href="css/jquery.convform.css">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.convform.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+</head>
+<body class="medical-record">
+  
+   
+    <div class="chat_box">
+        <div class="my-conv-form-wrapper">
+            <form action="" method="GET" class="hidden">
+    
+          <select data-conv-question="Hello! How can I help you" name="category">
+            <option value="WebDevelopment">I am sick</option>
+            <option value="DigitalMarketing">Need advice</option>
+          </select>
+    
+          <div data-conv-fork="category">
+            <div data-conv-case="WebDevelopment">
+              <input type="text" name="domainName" data-conv-question="Please describe your condition">    
+            </div>
+            <div data-conv-case="DigitalMarketing" data-conv-fork="first-question2">
+              <input type="text" name="companyName" data-conv-question="Please describe your problem"> 
+            </div>
+          </div>
+    
+          <input type="text" name="name" data-conv-question="Please, Enter your name">
+    
+          <input type="text" data-conv-question="Hi {name}, <br> It's a pleasure to meet you." data-no-answer="true">
+    
+          <input data-conv-question="Enter your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" name="email" required placeholder="What's your e-mail?">
+    
+          <select data-conv-question="Please Conform">
+            <option value="Yes">Conform</option>
+          </select>
+
+          <input type="text" data-conv-question="Don't worry I will help you">
+    
+          </form>
+        </div>
+    
+  </div>
+    
+</body>

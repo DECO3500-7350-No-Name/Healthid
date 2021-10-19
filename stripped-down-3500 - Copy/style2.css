@@ -245,3 +245,15 @@ input.search-color{
    display: flex;
    align-self: flex-start;
  }
+
+/*ChatBot*/
+
+.chat_box{
+	width: 400px;
+	height: 80vh;
+	position:fixed;
+	bottom: 100px;
+	background:#333333ee;
+	z-index: 1000;
+	border-radius: 30px;
+}
