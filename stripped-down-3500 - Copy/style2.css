@@ -144,12 +144,12 @@ h1.temp {
   transition: 0.2s ease-in-out;
 }
 
-hr{
+hr {
   border-top: 0.25vh dashed white;
   border-bottom: 0px;
 }
 
-input.search-color{
+input.search-color {
   border: none;
   outline: none;
   padding: 0.4em 1em;
@@ -161,7 +161,7 @@ input.search-color{
   width: calc(100% - 100px);
 }
 
-.flex-nav{
+.flex-nav {
   display: flex;
   flex-direction: row;
   background-color: #d1e2e9;
@@ -171,18 +171,18 @@ input.search-color{
   justify-content: center;
 }
 
-.flex-nav a{
+.flex-nav a {
   margin-left: 5vw;
   margin-right: 20vw;
   text-decoration: none;
   color: black;
 }
 
-.flex-nav a:hover{
+.flex-nav a:hover {
   color: white;
 }
 
-.flex-row{
+.flex-row {
   padding-top: 1em;
   padding-bottom: 1em;
   display: flex;
@@ -190,7 +190,7 @@ input.search-color{
   justify-content: space-between;
 }
 
-.flex-column{  
+.flex-column {
   padding-top: 1em;
   padding-bottom: 1em;
   display: flex;
@@ -198,49 +198,54 @@ input.search-color{
   align-items: flex-end;
 }
 
-.flex-column-start{ 
+.flex-column-start {
   padding-top: 1em;
-  padding-bottom: 1em; 
+  padding-bottom: 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.small-font{
+.small-font {
   font-size: 2.8vw;
 }
 
-.small-font-grey{
+.small-font-grey {
   font-size: 2.8vw;
   color: rgb(202, 201, 201);
 }
 
-.header-font{
+.header-font {
   padding-top: 1em;
   font-size: 3.25vw;
   font-weight: bold;
 }
 
-.main-header-font{
+.main-header-font {
   text-align: center;
   font-size: 4vw;
   font-weight: bold;
 }
 .flex-row img {
-	border-radius: 100%;
-	max-width: 100%;
+  border-radius: 100%;
+  max-width: 100%;
   width: 14%;
   height: 14%;
   margin-block-start: 1em;
   margin-block-end: 1em;
 }
 
-.smaller-font{
-  font-size: 2.0vw;
+.smaller-font {
+  font-size: 2vw;
 }
 
-.nav-font{
-  font-size: 3.0vw;
+.nav-font {
+  font-size: 3vw;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
 }
 
 .badge {
@@ -251,19 +256,19 @@ input.search-color{
   background-color: red;
   color: white;
 }
- .home {
-   display: flex;
-   align-self: flex-start;
- }
+.home {
+  display: flex;
+  align-self: flex-start;
+}
 
 /*ChatBot*/
 
-.chat_box{
-	width: 400px;
-	height: 80vh;
-	position:fixed;
-	bottom: 100px;
-	background:#333333ee;
-	z-index: 1000;
-	border-radius: 30px;
+.chat_box {
+  width: 400px;
+  height: 80vh;
+  position: fixed;
+  bottom: 100px;
+  background: #333333ee;
+  z-index: 1000;
+  border-radius: 30px;
 }
