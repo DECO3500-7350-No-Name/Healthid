@@ -26,5 +26,5 @@
 3. Navigate to index.html and click on it to open the prototype.
 4. As this is just a proof of concept, ensure that the windows size is as small as possible. (We wanted to simulate the experience of using a mobile application)
 
-##Plug-ins
+## Plug-ins
 * mapbox: https://www.mapbox.com/
