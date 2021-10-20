@@ -277,3 +277,13 @@ input.search-color {
   margin-right: 32px;
   float: right;
 }
+.back-button {
+  width: 20%;
+  padding: 2em;
+}
+.backbutton img {
+  width: 10%;
+  margin-top: 40px;
+  background-color: rgba(255, 255, 255, 0.795);
+ 
+}
