@@ -280,6 +280,7 @@ input.search-color {
 .back-button {
   width: 20%;
   padding: 2em;
+  margin-bottom: -2.5em;
 }
 .backbutton img {
   width: 10%;
