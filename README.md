@@ -12,13 +12,13 @@
 
 ## Concept Proposal
 
-* Proposal: 
+* Proposal: https://github.com/DECO3500-7350-No-Name/Healthid/wiki/Proposal
 
 ## Proof of concept Prototype
 
 * Prototype: https://github.com/DECO3500-7350-No-Name/Healthid
-* Poster: 
-* Brochure: 
+* Poster: https://github.com/DECO3500-7350-No-Name/3500-No-Name/blob/main/POSTER.pdf
+* Brochure: https://github.com/DECO3500-7350-No-Name/3500-No-Name/blob/main/Health%20ID%20Brochure.pdf
 
 ## Instructions
 1. Go to github (https://github.com/DECO3500-7350-No-Name/Healthid) and download the code.
