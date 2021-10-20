@@ -8,7 +8,7 @@
 
 ## Project wiki
 
-* Wiki: 
+* Wiki: https://github.com/DECO3500-7350-No-Name/Healthid/wiki
 
 ## Concept Proposal
 
