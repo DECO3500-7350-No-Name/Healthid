@@ -17,6 +17,7 @@
 ## Proof of concept Prototype
 
 * Prototype: https://github.com/DECO3500-7350-No-Name/Healthid
+* XD Prototype: https://github.com/DECO3500-7350-No-Name/3500-No-Name/blob/main/Health%20ID.xd
 * Poster: https://github.com/DECO3500-7350-No-Name/3500-No-Name/blob/main/POSTER.pdf
 * Brochure: https://github.com/DECO3500-7350-No-Name/3500-No-Name/blob/main/Health%20ID%20Brochure.pdf
 
